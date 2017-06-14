@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>takaoka</title>
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="failure_input.scss">
+
+<script Language="JavaScript">
+<!--
+resizeTo(1900,1200);
+function winopen(C:\Users\k-ura\Desktop\takaoka_body\failure_input.html){
+	win = window.open(C:\Users\k-ura\Desktop\takaoka_body\failure_input.html,"","scrollbars=1,width=780,height=480");
+}
+// -->
+
+</script>
+
+</head>
+
+<body>
+
+<script>
+const inspection_at = new Date();
+
+const year = inspection_at.getFullYear();
+const month = inspection_at.getMonth()+1;
+const week = inspection_at.getDay();
+const day = inspection_at.getDate();
+</script>
+
+	<header>
+	<p class="top">高岡工場 不良マッピング ボデー工程　不良入力　1ライン 外板　<script>document.write(month+"月"+day+"日");</script></p>
+	</header>
+
+	<div class="inspection-family">
+		<label class="vehicleLabel">車種</label>
+		<input type="text" name="vehicle">
+		<label class="bodynumLabel">ボデーNo</label>
+		<input type="text" name="bodynum">
+		<label class="SerialNoLabel">ボデー連番</label>
+		<input type="text" name="SerialNo">
+		<label class="inspectorFamilyLabel">記入者</label>
+		<input type="text" name="inspector-group">
+		<input type="text" name="inspector">
+		<label class="modificationFamilyLabel">手直者</label>
+		<input type="text" name="midification-group">
+		<input type="text" name="modification">
+		<button class="comment">コメント</button>
+	</div>
+
+	<div class="main">	
+		<div class="failure-type">
+			<div class="type-top">
+				<button class="failure">凸</button>
+				<button class="failure">当て凸</button>
+				<button class="failure">折れ</button>
+				<button class="failure">キズ</button>
+				<button class="failure">キズ凹</button>
+				<button class="failure">凸</button>
+				<button class="failure">角当て</button>
+				<button class="failure">材不</button>
+			</div>
+			<div class="type-bottom">
+				<button class="failure">歪</button>
+				<button class="failure">ロー付け</button>
+				<button class="failure">不良</button>
+				<button class="failure">建付不良</button>
+				<button class="failure">サビ</button>
+				<!--<button class="registration">登録</button>-->
+			</div>
+		</div>
+
+		<div class="figure-area">
+			<img src="images/S320254.png">
+		</div>
+
+		<div class="modification-type">
+			<div class="type-top">
+				<button class="failure">修正</button>
+				<button class="failure">面修正</button>
+				<button class="failure">建付調整</button>
+				<button class="failure">アーク修正</button>
+				<button class="failure">取付</button>
+				<button class="failure">取替</button>
+				<button class="failure">タップ掛け</button>
+				<button class="failure">ダイス掛け</button>
+			</div>
+			<div class="type-bottom">
+				<button class="failure">シーラー修正</button>
+				<button class="failure">溶接</button>
+				<button class="failure">除去</button>
+				<button class="failure">確認</button>
+				<button class="failure">測定</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="side-menu">
+		<div class="menu-list">
+			<button class="registration">登録</button>
+			<button class="menu">MENU</button>
+			<button class="inner">内板</button>
+			<label class="factorLabel">他要因</label><input type="text" name="factor">
+			<button class="alldelete">全削除</button>
+			<button class="selectdelete">選択削除</button>
+			<button class="selectchange">選択変更</button>
+			<button class="throw">廃棄</button>
+			<button class="imageatc">画像添付</button>
+		</div>
+		<div class="check">
+			<label class="f-check">金具最終確認</label><label class="body-dev">ボデー課</label><button class="color-body">白</button><button class="body-inspector"></button><label class="paint">塗装課</label><button class="color-paint">白</button><button class="paint-inspector"></button>	
+		</div>
+	</div>
+
+</body>
+
+</html>
